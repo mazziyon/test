@@ -1,0 +1,144 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Engravers MT, Helvetica, sans-serif;
+}
+
+/* warna */
+:root {
+    --hitam: #000;
+    --putih: #e3edf0;
+    --biru: rgb(227, 33, 227);
+    --oren: rgb(213, 135, 41);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* branda */
+.homepage {
+    height: 100vh;
+    background-image: url('icone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: rgba(104, 149, 160, 0.75);
+}
+
+.navbar span {
+    color: #131517;
+    font-weight: 700;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navbar ul li a {
+    color: #131517;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 5xs;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--oren);
+    color: #131517;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.homepage h5 {
+    color: var(--putih);
+    text-shadow: 0 0 20px var(--hitam);
+    font-size: 60px;
+    line-height: 80vh;
+    text-align: center;
+}
+/* end branda */
+
+/* Daftar Kls */
+.daftar-kelas h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.cards {
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.cards .card {
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    color: var(--hitam);
+    border: 2px solid var(--hitam);
+    background-color: var(--putih);
+    transition: 0.5s;
+    /* untuk mengubah sudut*/
+    border-radius: 5px;
+}
+
+.cards .card:hover {
+    transform:translateY(-10px) ;
+    box-shadow: 0 10px 10px var(--hitam);
+}
+
+.cards .card p {
+    margin-top: 10px;
+}
+
+.cards .card button {
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 200;
+    background-color: var(--biru);
+    color: var(--putih);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.cards .card button:hover {
+    background-color: var(--oren);
+    color: var(--putih);
+}
+/* end daftar kls */
+
+/* menu kontak */
+.contact h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+/* end kontak */
+
+/* footer */
+.footer {
+    background-color: var(--hitam);
+    padding: 5px 0;
+}
+
+.footer h3 {
+    color: var(--putih);
+    text-align: center;
+}
+/* end footer */
